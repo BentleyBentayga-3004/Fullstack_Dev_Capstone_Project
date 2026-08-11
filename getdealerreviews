@@ -1,0 +1,26 @@
+* Host localhost:3030 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:3030...
+* Connected to localhost (::1) port 3030
+> GET /fetchReviews/dealer/1 HTTP/1.1
+> Host: localhost:3030
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< X-Powered-By: Express
+< Access-Control-Allow-Origin: *
+< Content-Type: application/json; charset=utf-8
+< Content-Length: 2
+< ETag: W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"
+< Date: Tue, 11 Aug 2026 22:46:46 GMT
+< Connection: keep-alive
+< Keep-Alive: timeout=5
+< 
+{ [2 bytes data]
+100     2  100     2    0     0    258      0 --:--:-- --:--:-- --:--:--   285
+* Connection #0 to host localhost left intact
+[]

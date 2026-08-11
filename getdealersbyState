@@ -1,0 +1,26 @@
+* Host localhost:3030 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:3030...
+* Connected to localhost (::1) port 3030
+> GET /fetchDealers/Kansas HTTP/1.1
+> Host: localhost:3030
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< X-Powered-By: Express
+< Access-Control-Allow-Origin: *
+< Content-Type: application/json; charset=utf-8
+< Content-Length: 222
+< ETag: W/"de-DHk9cVGgCUxIS417Sksbl8RoghU"
+< Date: Tue, 11 Aug 2026 22:47:20 GMT
+< Connection: keep-alive
+< Keep-Alive: timeout=5
+< 
+{ [222 bytes data]
+100   222  100   222    0     0  56373      0 --:--:-- --:--:-- --:--:-- 74000
+* Connection #0 to host localhost left intact
+[{"_id":"6a7ba35ce1000f8fcd111e8e","id":8,"city":"Topeka","state":"Kansas","address":"288 Larry Place","zip":"66642","lat":"39.0429","long":"-95.7697","short_name":"Bytecard","full_name":"Bytecard Car Dealership","__v":0}]
