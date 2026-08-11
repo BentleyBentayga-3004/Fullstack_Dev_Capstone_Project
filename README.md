@@ -1,4 +1,4 @@
-# Dealerships Review Portal - Fullstack Software Developer Capstone Project
+# Best Car Dealership - IBM Fullstack Capstone Project
 by Sierra Ripoche
 
 ## Overview
