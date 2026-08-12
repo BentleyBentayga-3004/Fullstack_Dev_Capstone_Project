@@ -30,6 +30,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
+    '127.0.0.1',
+    '.app.github.dev',
+    '.github.dev',
     (
         'https://ripochesierr-8000.theianext-0-labs-prod-misc-tools-us-east-0.'
         'proxy.cognitiveclass.ai'
@@ -40,6 +43,10 @@ ALLOWED_HOSTS = [
     )
 ]
 CSRF_TRUSTED_ORIGINS = [
+    'https://*.app.github.dev',
+    'https://*.github.dev',
+    'http://localhost:8000',
+    'https://localhost:8000',
     (
         'https://ripochesierr-8000.theianext-0-labs-prod-misc-tools-us-east-0.'
         'proxy.cognitiveclass.ai'
