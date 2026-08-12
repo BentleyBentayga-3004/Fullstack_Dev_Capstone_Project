@@ -1,4 +1,23 @@
+* Host localhost:5000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    25  100    25    0     0  10129      0 --:--:-- --:--:-- --:--:-- 12500
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:5000...
+* Connected to localhost (::1) port 5000
+> GET /analyze/Fantastic%20services HTTP/1.1
+> Host: localhost:5000
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Server: Werkzeug/3.1.8 Python/3.9.18
+< Date: Wed, 12 Aug 2026 09:48:12 GMT
+< Content-Type: text/html; charset=utf-8
+< Content-Length: 25
+< Connection: close
+< 
+{ [25 bytes data]
+100    25  100    25    0     0   9286      0 --:--:-- --:--:-- --:--:-- 12500
+* Closing connection
 {"sentiment": "positive"}
