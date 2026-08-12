@@ -5,7 +5,7 @@ Note: Unnecessary use of -X or --request, POST is already inferred.
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:8000...
-* connect to ::1 port 8000 from ::1 port 34126 failed: Connection refused
+* connect to ::1 port 8000 from ::1 port 42726 failed: Connection refused
 *   Trying 127.0.0.1:8000...
 * Connected to localhost (127.0.0.1) port 8000
 > POST /djangoapp/login HTTP/1.1
@@ -17,16 +17,18 @@ Note: Unnecessary use of -X or --request, POST is already inferred.
 > 
 } [45 bytes data]
 < HTTP/1.1 200 OK
-< Date: Tue, 11 Aug 2026 22:45:03 GMT
-< Server: WSGIServer/0.2 CPython/3.12.1
+< Date: Wed, 12 Aug 2026 09:29:52 GMT
+100    45    0     0  100    45      0     80 --:--:-- --:--:-- --:--:--    80< Server: WSGIServer/0.2 CPython/3.12.1
 < Content-Type: application/json
 < X-Frame-Options: DENY
-< Content-Length: 20
+< Content-Length: 47
+< Vary: Cookie
 < X-Content-Type-Options: nosniff
 < Referrer-Policy: same-origin
 < Cross-Origin-Opener-Policy: same-origin
+< Set-Cookie: sessionid=bh18chibasfkieuoexi812qq94iaj658; expires=Wed, 26 Aug 2026 09:29:52 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax
 < 
-{ [20 bytes data]
-100    65  100    20  100    45     37     84 --:--:-- --:--:-- --:--:--   122
+{ [47 bytes data]
+100    92  100    47  100    45     83     80 --:--:-- --:--:-- --:--:--   163
 * Connection #0 to host localhost left intact
-{"userName": "root"}
+{"userName": "root", "status": "Authenticated"}
